@@ -28,6 +28,8 @@ class Triplet_Generator:
             return 'n'
         if pos_label in ['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']:
             return 'v'
+        if pos_label in ['JJ']:
+            return 'a'
         return None
 
     def generate_sentence_triplet(self, text):
